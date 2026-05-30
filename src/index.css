@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  
+  --color-background: #051425;
+  --color-surface: #051425;
+  --color-surface-dim: #051425;
+  --color-surface-bright: #2c3a4d;
+  --color-surface-container-lowest: #010f20;
+  --color-surface-container-low: #0d1c2e;
+  --color-surface-container: #122032;
+  --color-surface-container-high: #1d2b3d;
+  --color-surface-container-highest: #283648;
+  --color-on-surface: #d5e3fc;
+  --color-on-surface-variant: #c6c6cd;
+  --color-inverse-surface: #d5e3fc;
+  --color-inverse-on-surface: #233144;
+  --color-outline: #909097;
+  --color-outline-variant: #45464d;
+  --color-primary: #bec6e0;
+  --color-on-primary: #283044;
+  --color-primary-container: #0f172a;
+  --color-on-primary-container: #798098;
+  --color-secondary: #5de6ff;
+  --color-on-secondary: #00363e;
+  --color-secondary-container: #00cbe6;
+  --color-on-secondary-container: #00515d;
+}
+
+@layer utilities {
+  .cyan-glow {
+    box-shadow: 0 0 20px rgba(93, 230, 255, 0.25);
+  }
+  
+  .cyan-glow-hover {
+    transition: all 0.3s ease;
+  }
+  .cyan-glow-hover:hover {
+    box-shadow: 0 0 30px rgba(93, 230, 255, 0.45);
+    transform: translateY(-2px);
+  }
+  
+  .glass-panel {
+    background: rgba(18, 32, 50, 0.75);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(144, 144, 151, 0.15);
+  }
+  
+  @keyframes orbit {
+    from { transform: rotate(0deg) translateX(110px) rotate(0deg); }
+    to { transform: rotate(360deg) translateX(110px) rotate(-360deg); }
+  }
+  
+  .animate-orbit-1 { animation: orbit 20s linear infinite; }
+  .animate-orbit-2 { animation: orbit 25s linear infinite reverse; }
+  .animate-orbit-3 { animation: orbit 18s linear infinite; }
+  .animate-orbit-4 { animation: orbit 22s linear infinite reverse; }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-surface);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Animations from Tailwind or Motion */
+@keyframes pulse-whatsapp {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+  70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.animate-pulse-whatsapp {
+  animation: pulse-whatsapp 2s infinite;
+}
+

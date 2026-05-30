@@ -1,0 +1,8 @@
+{
+  "name": "Vértice Marketing",
+  "description": "Agência de Marketing Digital & Performance com foco em estratégia data-driven.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
