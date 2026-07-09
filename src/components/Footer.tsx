@@ -71,35 +71,6 @@ export default function Footer() {
             Referência em performance digital de alta performance, SEO tático e estratégia focada em dados integrados no Brasil. Transformando marcas com precisão analítica.
           </p>
 
-          <div className="flex gap-4">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noreferrer"
-              className="text-on-surface-variant hover:text-secondary hover:scale-105 transition-all text-sm"
-              aria-label="Instagram"
-            >
-              <Instagram size={18} />
-            </a>
-            <a
-              href="https://youtube.com"
-              target="_blank"
-              rel="noreferrer"
-              className="text-on-surface-variant hover:text-secondary hover:scale-105 transition-all text-sm"
-              aria-label="YouTube"
-            >
-              <Youtube size={18} />
-            </a>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noreferrer"
-              className="text-on-surface-variant hover:text-secondary hover:scale-105 transition-all text-sm"
-              aria-label="Facebook"
-            >
-              <Facebook size={18} />
-            </a>
-          </div>
         </div>
 
         {/* Column 2: Empresa */}

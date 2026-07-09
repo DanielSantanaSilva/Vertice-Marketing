@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { TrendingUp, Share2, Play, MousePointerClick, FileText, Users, ArrowRight } from "lucide-react";
+import { TrendingUp, Share2, MousePointerClick, FileText, Users, ArrowRight, Globe } from "lucide-react";
 import { Service } from "../types";
 
 interface ServicesProps {
@@ -37,18 +37,18 @@ export default function Services({ onSelectService }: ServicesProps) {
       metrics: "Taxa de Engajamento Qualificado"
     },
     {
-      id: "tiktok",
-      iconName: "Play",
-      title: "TikTok",
-      shortDescription: "Estratégias específicas para o canal de maior crescimento orgânico da atualidade.",
-      fullDescription: "Desenvolvemos o funil completo no TikTok: do entretenimento viral até a conversão imediata. Unimos algoritmos inteligentes de distribuição com roteiros dinâmicos criados para capturar a atenção nos primeiros 3 segundos de tela.",
+      id: "landing-pages-sites",
+      iconName: "Globe",
+      title: "Landing Pages & Sites",
+      shortDescription: "Criação de landing pages e sites robustos com SEO focados em alta conversão.",
+      fullDescription: "Desenvolvemos landing pages e sites institucionais robustos, totalmente otimizados para SEO e focados em alta conversão. Unimos design premium, velocidade de carregamento excepcional e estratégias de marketing orgânico para posicionar sua marca no topo e maximizar suas vendas.",
       features: [
-        "Produção de vídeos curtos em escala contínua",
-        "Análise em tempo real de áudios em alta & tendências",
-        "Roteiros magnéticos e otimizados para retenção",
-        "Criação, gestão e escala de campanhas TikTok Ads"
+        "Desenvolvimento de Landing Pages de altíssima conversão",
+        "Sites corporativos robustos, rápidos e responsivos",
+        "SEO avançado para atração de tráfego qualificado orgânico",
+        "Otimização de velocidade e experiência do usuário (UX/UI)"
       ],
-      metrics: "Retenção e custo por mil visualizações (CPM)"
+      metrics: "Taxa de Conversão & Tráfego Orgânico"
     },
     {
       id: "midia-paga",
@@ -100,14 +100,14 @@ export default function Services({ onSelectService }: ServicesProps) {
         return <TrendingUp className="text-secondary w-9 h-9" />;
       case "Share2":
         return <Share2 className="text-secondary w-9 h-9" />;
-      case "Play":
-        return <Play className="text-secondary w-9 h-9 fill-secondary/20" />;
       case "MousePointerClick":
         return <MousePointerClick className="text-secondary w-9 h-9" />;
       case "FileText":
         return <FileText className="text-secondary w-9 h-9" />;
       case "Users":
         return <Users className="text-secondary w-9 h-9" />;
+      case "Globe":
+        return <Globe className="text-secondary w-9 h-9" />;
       default:
         return <TrendingUp className="text-secondary w-9 h-9" />;
     }
