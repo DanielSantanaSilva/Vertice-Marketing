@@ -38,12 +38,33 @@ export default function ContactForm() {
 
     setIsSubmitting(true);
 
-    // Simulate backend request after 1 second
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
-      setFormData({ name: "", email: "", website: "", message: "" });
-    }, 1200);
+    fetch("https://formsubmit.co/ajax/contatoverticemarketingdigital@gmail.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json"
+      },
+      body: JSON.stringify({
+        Nome: formData.name,
+        Email: formData.email,
+        Website: formData.website,
+        Mensagem: formData.message,
+        _subject: "Novo contato do site - Vértice Marketing"
+      })
+    })
+      .then(response => {
+        setIsSubmitting(false);
+        if (response.ok) {
+          setSubmitSuccess(true);
+          setFormData({ name: "", email: "", website: "", message: "" });
+        } else {
+          setErrorMsg("Houve um erro ao enviar a mensagem. Por favor, tente novamente ou envie um e-mail direto.");
+        }
+      })
+      .catch(() => {
+        setIsSubmitting(false);
+        setErrorMsg("Houve um erro de rede. Por favor, tente novamente ou envie um e-mail direto.");
+      });
   };
 
   return (
@@ -74,9 +95,12 @@ export default function ContactForm() {
                   <p className="font-mono text-[10px] text-on-surface-variant uppercase tracking-widest font-bold">
                     E-mail Direto
                   </p>
-                  <p className="font-sans text-body-md text-on-surface font-semibold mt-0.5">
-                    contato@verticemarketing.com.br
-                  </p>
+                  <a 
+                    href="mailto:contatoverticemarketingdigital@gmail.com" 
+                    className="font-sans text-body-md text-on-surface hover:text-secondary transition-colors font-semibold mt-0.5 block"
+                  >
+                    contatoverticemarketingdigital@gmail.com
+                  </a>
                 </div>
               </div>
 

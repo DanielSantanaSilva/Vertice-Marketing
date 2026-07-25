@@ -1,5 +1,5 @@
 export default function WhatsAppButton() {
-  const whatsappUrl = "https://wa.me/5511999999999?text=Ol%C3%A1%21+Gostaria+de+falar+com+um+especialista+da+V%C3%A9rtice+Marketing.";
+  const whatsappUrl = "https://wa.me/5511986339843?text=Ol%C3%A1%21+Gostaria+de+falar+com+um+especialista+da+V%C3%A9rtice+Marketing.";
 
   return (
     <a
