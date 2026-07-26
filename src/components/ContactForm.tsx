@@ -231,6 +231,7 @@ export default function ContactForm() {
                     onChange={handleChange}
                     placeholder="Ex: Pedro de Alcântara"
                     type="text"
+                    autoComplete="name"
                   />
                 </div>
 
@@ -246,6 +247,7 @@ export default function ContactForm() {
                     onChange={handleChange}
                     placeholder="lucas@suaempresa.com.br"
                     type="email"
+                    autoComplete="email"
                   />
                 </div>
 
@@ -261,6 +263,7 @@ export default function ContactForm() {
                     onChange={handleChange}
                     placeholder="www.suaempresa.com.br"
                     type="url"
+                    autoComplete="url"
                   />
                 </div>
 
@@ -276,6 +279,7 @@ export default function ContactForm() {
                     onChange={handleChange}
                     placeholder="Gostaria de escalar minhas conversões e otimizar campanhas de tráfego pago..."
                     rows={4}
+                    autoComplete="off"
                   />
                 </div>
 
