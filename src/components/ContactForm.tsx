@@ -49,7 +49,7 @@ export default function ContactForm() {
         Email: formData.email,
         Website: formData.website,
         Mensagem: formData.message,
-        _subject: "Novo contato do site - Vértice Marketing"
+        _subject: "Novo contato do site - Vértice Marketing Digital"
       })
     })
       .then(response => {
@@ -179,7 +179,7 @@ export default function ContactForm() {
                 <button
                   onClick={() => {
                     if (navigator.share) {
-                      navigator.share({ title: 'Vértice Marketing', url: window.location.href });
+                      navigator.share({ title: 'Vértice Marketing Digital', url: window.location.href });
                     } else {
                       navigator.clipboard.writeText(window.location.href);
                     }

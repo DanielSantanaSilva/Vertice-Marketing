@@ -58,7 +58,7 @@ export default function Hero() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center w-full">
         {/* Core narrative section */}
         <div className="lg:col-span-7 z-10 text-left">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -71,7 +71,7 @@ export default function Hero() {
             <Sparkles className="text-secondary w-4 h-4 animate-pulse" />
           </motion.div>
 
-          <motion.h1 
+          <motion.h1
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
@@ -83,7 +83,7 @@ export default function Hero() {
             </span> QUE ELEVA SEU RESULTADO.
           </motion.h1>
 
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -92,17 +92,17 @@ export default function Hero() {
             Somos a Vértice, especialistas em performance digital e conteúdo data-driven. Transformamos sua presença online em crescimento real através de estratégia, redes sociais e mídia paga de alta performance.
           </motion.p>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-6"
           >
-            <a 
-              href="#contato" 
+            <a
+              href="#contato"
               className="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-display text-base font-bold flex items-center justify-center gap-3 cyan-glow hover:brightness-110 transition-all duration-300 group"
             >
-              FALE COM A VÉRTICE 
+              FALE COM A VÉRTICE
               <Rocket className="group-hover:translate-x-1 group-hover:scale-110 transition-transform w-5 h-5 text-on-secondary" />
             </a>
           </motion.div>
@@ -111,10 +111,10 @@ export default function Hero() {
         {/* Orbit graphical element */}
         <div className="lg:col-span-5 relative mt-16 lg:mt-0 flex justify-center">
           <div className="absolute inset-0 bg-secondary/5 rounded-full blur-[120px] -z-10"></div>
-          
+
           <div className="glass-panel p-8 rounded-xl relative overflow-visible w-full max-w-[450px]">
             <div className="relative h-[380px] flex items-center justify-center overflow-visible">
-              
+
               {/* Outer orbit boundary guide line */}
               <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-20" viewBox="0 0 400 400">
                 <circle cx="200" cy="190" r="110" fill="none" stroke="#5de6ff" strokeDasharray="5 5" strokeWidth="1" />
@@ -128,16 +128,16 @@ export default function Hero() {
 
               {/* Orbiting assets mapping */}
               {socialIcons.map((icon, idx) => (
-                <div 
+                <div
                   key={idx}
                   className={`absolute ${icon.animClass} z-10`}
                   style={{ animationDelay: icon.delay }}
                 >
                   <div className="bg-white rounded-lg p-2.5 border border-outline-variant/30 flex items-center justify-center cyan-glow w-16 h-16 transition-all hover:scale-110">
-                    <img 
-                      alt={icon.name} 
-                      className="w-full h-full object-contain" 
-                      src={icon.url} 
+                    <img
+                      alt={icon.name}
+                      className="w-full h-full object-contain"
+                      src={icon.url}
                       referrerPolicy="no-referrer"
                     />
                   </div>
@@ -152,16 +152,16 @@ export default function Hero() {
                   ROAS MÉDIO
                 </p>
                 <h4 className="font-display text-3xl font-extrabold text-secondary">
-                  8.4x
+                  6.4x
                 </h4>
               </div>
-              
+
               <div className="glass-panel p-4 rounded-xl border-secondary/20 hover:border-secondary transition-colors duration-300 group">
                 <p className="font-sans text-[10px] uppercase font-bold text-on-surface-variant mb-1 group-hover:text-green-400 tracking-widest">
                   CONVERSÕES
                 </p>
                 <h4 className="font-display text-3xl font-extrabold text-green-400">
-                  +150%
+                  +90%
                 </h4>
               </div>
             </div>

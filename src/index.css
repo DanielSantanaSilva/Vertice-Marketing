@@ -47,6 +47,25 @@
     background: rgba(18, 32, 50, 0.75);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(144, 144, 151, 0.15);
+    /* Floating logo effect */
+    .floating-logo {
+      background: transparent;
+      mix-blend-mode: screen;
+      filter: drop-shadow(0 0 8px rgba(255,255,255,0.6));
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .floating-logo:hover {
+      transform: translateY(-4px) scale(1.05);
+      filter: drop-shadow(0 0 12px rgba(255,255,255,0.9));
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+    .floating-logo {
+      animation: float 6s ease-in-out infinite;
+    }
   }
   
   @keyframes orbit {
