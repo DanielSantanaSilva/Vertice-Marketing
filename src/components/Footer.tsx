@@ -53,7 +53,7 @@ export default function Footer() {
             <a href="#servicos" className="text-on-surface-variant hover:text-secondary hover:translate-x-1 transition-all">Estratégia</a>
             <a href="#servicos" className="text-on-surface-variant hover:text-secondary hover:translate-x-1 transition-all">Redes Sociais</a>
             <a href="#servicos" className="text-on-surface-variant hover:text-secondary hover:translate-x-1 transition-all">Mídia Paga</a>
-            <a href="#servicos" className="text-on-surface-variant hover:text-secondary hover:translate-x-1 transition-all">TikTok Strategy</a>
+            <a href="#servicos" className="text-on-surface-variant hover:text-secondary hover:translate-x-1 transition-all">Landing Pages & Sites</a>
           </div>
         </div>
 
