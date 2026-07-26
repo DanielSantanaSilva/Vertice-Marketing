@@ -1,5 +1,7 @@
-export default function WhatsAppButton() {
-  const whatsappUrl = "https://wa.me/5511986339843?text=Ol%C3%A1%21+Gostaria+de+falar+com+um+especialista+da+V%C3%A9rtice+Marketing.";
+export const DEFAULT_MESSAGE = "Olá! Gostaria de falar com um especialista da Vértice Marketing Digital.";
+
+export default function WhatsAppButton({ message = DEFAULT_MESSAGE }: { message?: string }) {
+  const whatsappUrl = `https://wa.me/5511986339843?text=${encodeURIComponent(message)}`;
 
   return (
     <a
